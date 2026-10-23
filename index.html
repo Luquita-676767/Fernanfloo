@@ -1,0 +1,261 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fernanfloo - Mi página web</title>
+
+    <style>
+        body {
+            margin: 0;
+            background-color: #e8f5e9;
+            color: #222;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav {
+            text-align: center;
+            padding: 15px;
+        }
+
+        .boton {
+            display: inline-block;
+            background-color: white;
+            color: #2e7d32;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 16px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+
+        main {
+            max-width: 850px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 18px;
+            margin: 20px 0;
+            border-left: 5px solid #66bb6a;
+            border-radius: 8px;
+        }
+
+        h2, h3 {
+            color: #2e7d32;
+        }
+
+        .foto {
+            display: block;
+            width: 100%;
+            max-width: 350px;
+            height: auto;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #2e7d32;
+            color: white;
+            text-align: center;
+            padding: 12px;
+        }
+
+        footer a {
+            color: white;
+            margin: 8px;
+        }
+
+        /* Mostrar una página por vez */
+        #home, #index {
+            display: none;
+        }
+
+        #home:target, #index:target {
+            display: block;
+        }
+
+        body:not(:has(:target)) #home {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>FERNANFLOO</h1>
+        <p>Una página sobre uno de los youtubers más conocidos</p>
+
+        <nav>
+            <a class="boton" href="#home">Home</a>
+            <a class="boton" href="#index">Index</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- PÁGINA HOME -->
+        <div id="home">
+
+            <section>
+                <h2>¿Quién es Fernanfloo?</h2>
+
+                <p>
+                    Fernanfloo es un creador de contenido salvadoreño
+                    conocido por sus videos de humor y videojuegos.
+                    Su nombre real es Luis Fernando Flores Alvarado.
+                </p>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT55s5luUhSr8XuiUKoxQqwKS0yvUozhZdXTHWjQp7HJA&s=10"
+                    class="foto"
+                    alt="Fernanfloo">
+            </section>
+
+            <section>
+                <h2>Su trayectoria</h2>
+
+                <p>
+                    Comenzó a subir videos a YouTube en 2011.
+                    Con el tiempo, ganó millones de seguidores gracias
+                    a su estilo divertido y a sus personajes.
+                </p>
+            </section>
+
+            <section>
+                <h2>¿Por qué es conocido?</h2>
+
+                <p>
+                    Es conocido por sus bromas, sus reacciones,
+                    sus gameplays y su forma particular de entretener
+                    a las personas en internet.
+                </p>
+            </section>
+
+            <nav>
+                <a class="boton" href="#index">Conocer más: ir al Index →</a>
+            </nav>
+
+        </div>
+
+        <!-- PÁGINA INDEX -->
+        <div id="index">
+
+            <section>
+                <h2>Índice</h2>
+
+                <p>
+                    En esta página encontrarás información e imágenes
+                    de Fernanfloo.
+                </p>
+
+                <ul>
+                </ul>
+            </section>
+
+            <section id="biografia">
+                <h2>1. Biografía</h2>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2XKKAJ1skU65l4xmonCJE5fSm_OmjCQAgLM7zi1Puzg&s=10"
+                    class="foto"
+                    alt="Imagen de Fernanfloo">
+
+                <p>
+                    Fernanfloo es un youtuber salvadoreño conocido
+                    por sus videos de videojuegos y humor.
+                </p>
+            </section>
+
+            <section id="youtube">
+                <h2>2. Canal de YouTube</h2>
+
+                <a href="https://www.youtube.com/@Fernanfloo"
+                   target="_blank"
+                   rel="noopener noreferrer">
+
+                    <img
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH2cqW93HbL5mfotBe250uV58Ohx363_lIQyFI3zkq_Q&s"
+                        class="foto"
+                        alt="Canal de YouTube de Fernanfloo">
+                </a>
+
+                <p>
+                    Se hizo famoso por sus gameplays y su estilo divertido.
+                </p>
+
+                <a href="https://www.youtube.com/@Fernanfloo"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Visitar su canal
+                </a>
+            </section>
+
+            <section id="videos">
+                <h2>3. Videos</h2>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfSJAwd-3NvyTpMfXuFCzftXdaBWw0cbLvKx7_jxTGDg&s=10"
+                    class="foto"
+                    alt="Videos de Fernanfloo">
+
+                <p>
+                    En su canal publica contenido de videojuegos
+                    y entretenimiento.
+                </p>
+            </section>
+
+            <section id="curiosidades">
+                <h2>4. Curiosidades</h2>
+
+                <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQk8wcA8EGuXRfqigzF9M9XTJDUAU9307E-44fRHDbVag&s=10"
+                    class="foto"
+                    alt="Fernanfloo y los videojuegos">
+
+                <ul>
+                    <li>Es de El Salvador.</li>
+                    <li>Su nombre real es Luis Fernando Flores Alvarado.</li>
+                    <li>Es conocido por su sentido del humor.</li>
+                </ul>
+            </section>
+
+            <nav>
+                <a class="boton" href="#home">← Volver a Home</a>
+                <a class="boton" href="#index">Volver al Index</a>
+            </nav>
+
+            <section>
+                <h2>Redes sociales</h2>
+                <p>
+                    <a href="https://www.youtube.com/@Fernanfloo"
+                       target="_blank">YouTube</a> |
+                    <a href="https://www.tiktok.com/@fernanfloo"
+                       target="_blank">TikTok</a> |
+                    <a href="https://instagram.com/fernanfloo"
+                       target="_blank">Instagram</a>
+                </p>
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Trabajo de Informática</p>
+    </footer>
+
+</body>
+</html>
